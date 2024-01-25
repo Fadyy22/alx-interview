@@ -27,11 +27,11 @@ if __name__ == "__main__":
         total_size += file_size
 
         if counter % 10 == 0:
-            print(f"Files size: {total_size}", flush=True)
+            print(f"Files size: {total_size}")
 
             for key, value in status_codes.items():
                 if value != 0:
-                    print(f"{key}: {value}", flush=True)
+                    print(f"{key}: {value}")
                     status_codes[key] = 0
 
             total_size = 0
