@@ -1,6 +1,9 @@
 #!/usr/bin/python3
+"""module for makeChange"""
+
 
 def makeChange(coins, total):
+    """returns fewest number of coins needed to meet a given amount total"""
     no_coins = 0
     sorted_coins = sorted(coins, reverse=True)
     if total > 0:
